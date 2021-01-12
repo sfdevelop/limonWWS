@@ -55,25 +55,214 @@
 					<a href="">
 						<img class="user mx-3" src="assets/i/user2.svg" alt="svg">
 					</a>
+	
+					<div class="dropdown">
+						<button class="dropdown-toggle btn-drpdown p-0 m-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  RU
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						  <a class="dropdown-item" href="#">RU</a>
+						  <a class="dropdown-item" href="#">EN</a>
+						  <a class="dropdown-item" href="#">DE</a>
+						</div>
+					  </div>
+	
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="slider relative d-none d-md-block">
+	<div class="overlay pt-5">
+	
+		<nav class="overlayMenu d-flex flex-column justify-content-between h90">
+			<div>
+				<div class="d-block mobile_menu">
+					<ul class="ml-4 ul-menu">
+						<li class="mobile_li py-3">
+							<a href="index.html">Главная </a>
+						</li>
+						<!--
+						<li class="mobile_li">
+							level 2
+							<ul>
+								<li class="mobile_li">a</li>
+								<li class="mobile_li">b</li>
+							</ul>
+						</li>
+	-->
+						<li class="mobile_li py-3">
+							<a href="">Каталог </a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Прайс </a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Услуги </a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Отзывы  </a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Контакты  </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	</div>
+	<div class="p-relative fon_top_contacts d-lg-none">
+		<div class="logo-menu ">
+			<img class="" src="assets/i/logo.png" alt="logo">
+		</div>
+		<div class="dropdown dropdown__menu">
+			<button class="dropdown-toggle btn-drpdown p-0 m-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  RU
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  <a class="dropdown-item" href="#">RU</a>
+			  <a class="dropdown-item" href="#">EN</a>
+			  <a class="dropdown-item" href="#">DE</a>
+			</div>
+		  </div>
+		  <a class="user_mobile" href="">
+			<img class="user mx-3" src="assets/i/user2.svg" alt="svg">
+		</a>
+		<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
+	</div>
+	<div class="slider relative d-block d-md-block">
 		<div class="slider__box relative d-flex justify-content-center">
 		    <img class="b-lazy w-100" src="assets/i/sl-01.png" alt="slider">
-		    <div class="container absolute d-flex justify-content-center flex-column pl-5">
+		    <div class="container absolute d-flex justify-content-center flex-column ">
 		        <div class="row">
-		            <h1 class="display-1 text-center">Комнаты и место в комнате
+		            <h1 class="display-1 text-center w-100">Комнаты и место в комнате
 		                посуточно</h1>
-		            <p class="text-center mt-4 w-100">Онлайн бронирование 24/7--
+		            <p class="text-center mt-4 w-100">Онлайн бронирование 24/7
 		            </p>
-		            <div class="w-100"></div>
-		            <a href="" class="btn-lg btn mt-4 ml-3">Смотреть каталог</a>
+		            <div class="w-100 text-center">
+		                <a href="" class="btn-lg btn mt-4 ml-3">Смотреть каталог</a>
+		            </div>
 		        </div>
 		    </div>
 		</div>
 		<!-- //= _sl-01.html -->
+	</div>
+	<div class="offers py-5">
+	    <div class="container">
+	        <h2 class="text-center w-100">НАШИ предложения</h2>
+	        <div class="text-center d-flex justify-content-center mt-3">
+	            <div class="line"></div>
+	        </div>
+	
+	        <div class="row mt-5">
+	            <div class="col-lg-4 mb-3 d-flex">
+	                <div class="card">
+	                    <a href="">
+	                        <img class="card-img-top" src="assets/i/pr-01.png" alt="Card image cap">
+	                    </a>
+	                    <div class="card-body d-flex flex-column">
+	                        <h5>Комната посуточно</h5>
+	                        <h6 class="my-2"><img class="mr-2" src="assets/i/dislocation.svg" alt="dislocation"> Дюсельдорф</h6>
+	                        <p class="card-text">Сдается верхняя комната 24м2 в квартире 160м2 в Рюттеншайд. (2 санузла и
+	                            балкон)
+	                            Все включено
+	                        </p>
+	                        <div class="card-down text-center">
+	                            <a href="" class="btn px-lg-3">Забронировать</a>
+	                            <div class="w-100 mt-3"></div>
+	                            <a href="">Подробнее <img class="ml-3" src="assets/i/arrow.svg" alt="arrow"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 mb-3 d-flex">
+	                <div class="card">
+	                    <a href="">
+	                        <img class="card-img-top" src="assets/i/pr-02.png" alt="Card image cap">
+	                    </a>
+	                    <div class="card-body d-flex flex-column">
+	                        <h5>Место в комнате посуточно</h5>
+	                        <h6 class="my-2"><img class="mr-2" src="assets/i/dislocation.svg" alt="dislocation"> Эссен</h6>
+	                        <p class="card-text">
+	                            Комфортная однокомнатная квартира расположена в районе Торгового центра "Depot"
+	                        </p>
+	                        <div class="card-down text-center">
+	                            <a href="" class="btn px-lg-3">Забронировать</a>
+	                            <div class="w-100 mt-3"></div>
+	                            <a href="">Подробнее <img class="ml-3" src="assets/i/arrow.svg" alt="arrow"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 mb-3 d-flex">
+	                <div class="card">
+	                    <a href="">
+	                        <img class="card-img-top" src="assets/i/pr-03.png" alt="Card image cap">
+	                    </a>
+	                    <div class="card-body d-flex flex-column">
+	                        <h5>Kомнатa посуточно</h5>
+	                        <h6 class="my-2"><img class="mr-2" src="assets/i/dislocation.svg" alt="dislocation"> Дюсельдорф</h6>
+	                        <p class="card-text">
+	                            Комфортная однокомнатная квартира расположена в районе Торгового центра "Depot"
+	                        </p>
+	                        <div class="card-down text-center">
+	                            <a href="" class="btn px-lg-3">Забронировать</a>
+	                            <div class="w-100 mt-3"></div>
+	                            <a href="">Подробнее <img class="ml-3" src="assets/i/arrow.svg" alt="arrow"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	<div class="row mt-5">
+	    <div class="container">
+	        <div class="text-center w-100">
+	            <a href="" class="btn btn-lg mx-3">Посмотреть все <img class="ml-3" src="assets/i/arrow.svg" alt="arrow"> </a>
+	        </div>
+	    </div>
+	</div>
+	    </div>
+	</div>
+	<div class="main_why py-5">
+	    <div class="container">
+	        <h2 class="text-center w-100">ВЫБИРАЮТ НАС потому что</h2>
+	        <div class="text-center d-flex justify-content-center mt-3">
+	            <div class="line"></div>
+	        </div>
+	        <div class="row mt-5 py-lg-5">
+	            <div class="col-lg-4">
+	                <h5 class="text-center w-100">Чисто и комфортно</h5>
+	                <div class="text-center">
+	                    <img src="assets/i/house-cleaning.svg" alt="house" class="my-4">
+	                </div>
+	                <p>
+	                    Повседневная практика показывает, что новая модель организационной деятельности обеспечивает
+	                    широкому кругу (специалистов) участие в формировании модели развития.
+	                </p>
+	            </div>
+	            <div class="col-lg-4">
+	                <h5 class="text-center w-100">Умеренные цены</h5>
+	                <div class="text-center">
+	                    <img src="assets/i/best-price.svg" alt="best-price" class="my-4">
+	                </div>
+	                <p>
+	                    Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. 
+	                </p>
+	            </div>
+	            <div class="col-lg-4">
+	                <h5 class="text-center w-100">Удобное расположение</h5>
+	                <div class="text-center">
+	                    <img src="assets/i/point.svg" alt="point" class="my-4">
+	                </div>
+	                <p>
+	                    Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. 
+	                </p>
+	            </div>
+	        </div>
+	        <div class="text-center w-100 mt-5">
+	            <a href="" class="btn btn-lg px-lg-3">Забронировать</a>
+	        </div>
+	    </div>
+	
 	</div>
 
 
