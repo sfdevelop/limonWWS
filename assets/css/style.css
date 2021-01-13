@@ -6,6 +6,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
@@ -8428,6 +8430,10 @@ mark,
         background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../i/beack-02.jpg) !important;
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../i/beack-02.jpg) !important;
     }
+
+    footer a {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -8504,8 +8510,45 @@ h2 {
     background: red;
 }
 
+.fixedsf {
+    background-color: #1d2228;
+}
+
 * {
     outline: none !important;
+}
+
+.slick-dots {
+    text-align: left;
+    padding-left: 15px;
+    bottom: -10px;
+}
+
+.slick-dots li {
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button {
+    border-radius: 50%;
+    border: 1px solid #54B036;
+    height: 10px;
+    width: 10px;
+}
+
+.slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    content: "";
+}
+
+.slick-dots .slick-active {
+    background-color: #54B036;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
 }
 
 .btn {
@@ -8634,9 +8677,9 @@ a:hover {
 }
 
 .card .btn {
-    background: -webkit-gradient(linear, left top, right top, from(#d0d832), to(#54b036));
-    background: -o-linear-gradient(left, #d0d832 0%, #54b036 100%);
-    background: linear-gradient(to right, #d0d832 0%, #54b036 100%);
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
     border: olive;
 }
 
@@ -8644,6 +8687,17 @@ a:hover {
     background-image: url(../i/beack-01.jpg);
     background-position: right;
     background-size: cover;
+}
+
+.offers .absolute {
+    position: absolute;
+}
+
+.offers .order {
+    background: #effb00;
+    border-radius: 0px 10px;
+    margin-top: 50%;
+    font-size: 14px;
 }
 
 .main_why {
@@ -8669,8 +8723,183 @@ a:hover {
 }
 
 .main_why .btn {
-    background: -webkit-gradient(linear, left top, right top, from(#d0d832), to(#54b036));
-    background: -o-linear-gradient(left, #d0d832 0%, #54b036 100%);
-    background: linear-gradient(to right, #d0d832 0%, #54b036 100%);
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
     border: olive;
+}
+
+.main_offer {
+    background-image: url(../i/beack-03.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.main_offer__box {
+    border-radius: 25px 0px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.main_offer__box a {
+    color: #54B036;
+    margin: auto 0 0;
+}
+
+.main_offer h5 {
+    font-family: "Barkentina Test";
+    font-size: 27px;
+    line-height: 1.1;
+}
+
+.main_offer p {
+    font-size: 14px;
+    margin: auto 0 0;
+}
+
+.main_offer .btn {
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
+    border: olive;
+}
+
+.main_send {
+    background-image: url(../i/beack-04.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.main_send .slick-slide {
+    padding: 15px 15px;
+}
+
+.main_send__box {
+    border-radius: 25px 0px;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    background-color: #fff;
+}
+
+.main_send__box h5 {
+    font-family: "Barkentina Test";
+    font-size: 27px;
+    text-align: left;
+}
+
+.main_send__box p {
+    font-size: 15px;
+}
+
+.main_send__box ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+.main_send__box ul a {
+    color: #000;
+}
+
+.main_send .btn {
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
+    border: olive;
+}
+
+footer {
+    background-image: url(../i/footer.png);
+    background-position: right;
+    background-size: cover;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-family: "Barkentina Test";
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+}
+
+footer ul a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+footer ul a:hover {
+    color: #fff;
+}
+
+.main_say {
+    background-image: url(../i/say.png);
+    background-position: right;
+    background-size: cover;
+    color: #fff;
+}
+
+.main_say__box {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.main_say__box img {
+    border-radius: 25px 0px;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.main_say h5 {
+    font-family: "Barkentina Test";
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.main_say p {
+    font-size: 14px;
+}
+
+.main_say a {
+    font-size: 14px;
+    color: #54B036;
+    text-decoration: underline;
+}
+
+.main_say .slick-dots {
+    bottom: -30px;
+    padding-left: 0;
+}
+
+.main_say .btn {
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
+    border: olive;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.rating .checked {
+    color: orange;
 }
