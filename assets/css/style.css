@@ -7820,6 +7820,151 @@ mark,
     margin-bottom: -1px;
 }
 
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    list-style: none;
+    font-size: 16px;
+}
+
+.breadcrumb a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.pagination .active {
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 10px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#d0d832), to(#54b036));
+    background: -o-linear-gradient(left top, #d0d832 0%, #54b036 100%);
+    background: linear-gradient(to right bottom, #d0d832 0%, #54b036 100%);
+}
+
+.page-link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000;
+    font-family: "Barkentina Test";
+    font-size: 22px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #0056b3;
+    text-decoration: none;
+    color: #000;
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+}
+
+.pagination-lg .page-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item:last-child .page-link {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
@@ -8510,7 +8655,11 @@ h2 {
     background: red;
 }
 
-.fixedsf {
+.bg-left {
+    background: url(../i/bg-left.png) no-repeat left top, url(../i/bg-right.png) no-repeat right top, url(../i/bg-down.png) no-repeat right bottom;
+}
+
+.fixedsf, .black {
     background-color: #1d2228;
 }
 
@@ -8693,7 +8842,7 @@ a:hover {
     position: absolute;
 }
 
-.offers .order {
+.card .order {
     background: #effb00;
     border-radius: 0px 10px;
     margin-top: 50%;
@@ -8902,4 +9051,8 @@ footer ul a:hover {
 
 .rating .checked {
     color: orange;
+}
+
+.brad_top {
+    padding-top: 100px;
 }
